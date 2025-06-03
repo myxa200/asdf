@@ -24,7 +24,7 @@ const sendTelegramMessage = async (text) => {
 };
 
 const getReviews = async () => {
-  const response = await fetch(`https://api.seller.uzum.uz/api/products/${PRODUCT_ID}/feedbacks`, {
+  const response = await fetch(`https://api.seller.uzum.uz/api/products/380339/feedbacks`, {
     headers: {Authorization: `Bearer ${UZUM_API_KEY}`}
   });
   if (!response.ok) {
